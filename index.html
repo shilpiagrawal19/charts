@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script> -->
+    <script src="./index.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container-fluid background">
+       <!-- //////////navbar//////////// -->
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Week</a></li>
+                <li><a href="#">Month</a></li>
+                <li><a href="#">Quarter</a></li>
+              </ul>
+              <ul class="nav navbar-nav add">
+                <li><a id="add-a" href="#">+</a></li>
+                <li><a href="#">9am-12am</a></li>
+              </ul>
+              <form class="navbar-form" action="/action_page.php">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">              
+                </div>
+                <a id="today-booking">Today's Live Bookings:<span class="booking-no">36</span></a>
+
+              </form>
+
+            </div>
+        </nav>
+        <!-- ///////left-menu/////////   -->
+        <div class="sidebar">
+            <h3 class="welcome-user">Welcome Back Jack</h3>
+            <a class="active-sidemenu" href="#home">Dashboard</a>
+            <a href="#news">Booking</a>
+            <a href="#contact">Devices</a>
+            <a href="#about">My Account</a>
+            <a href="#about">Reports</a>
+            <a href="#about">Settings</a>
+            <a class="Logout" href="#about">Logout</a>
+
+        </div>
+
+        <!-- /////////Main -Menu/////////////// -->
+        <div class="Main-Menu">
+            <div class="row">
+                <div class="col-sm-2 card">
+                
+                        <h6 class="card-title">Total Booking</h6>
+                        <h4 class="current-data">1192</h4>
+                        <p class="previous-data">Last Week <span>64</span></p>
+                    
+                </div>
+                <div class="col-sm-2 card">
+
+                    <h6 class="card-title">Completed Booking</h6>
+                    <h4 class="current-data">1150</h4>
+                    <p class="previous-data">Last Week <span>64</span></p>
+
+                </div>
+                <div class="col-sm-2 card">
+        
+                        <h6 class="card-title">Canceled Booking</h6>
+                        <h4 class="current-data">32</h4>
+                        <p class="previous-data">Last Week <span>64</span></p>
+                    
+                </div> 
+                <div class="col-sm-2 card">
+        
+                    <h6 class="card-title">Failed Booking</h6>
+                    <h4 class="current-data">10</h4>
+                    <p class="previous-data">Last Week <span>64</span></p>
+                
+                </div> 
+                <div class="col-sm-2 card">
+        
+                    <h6 class="card-title">Average pickup time</h6>
+                    <h4 class="current-data">4 min</h4>
+                    <p class="previous-data">Last Week <span>10 35 min</span></p>
+                
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 card">
+
+                    <h6 class="card2-title">Higher Performer</h6>
+                    <ul class="card2-list">
+                        <li>Gold Coast Hospital</li>
+                        <li>Miraj Hotal</li>
+                        <li>Pin Pin Resort</li>
+                        <li>Alices Bar</li>
+                    </ul>
+
+                </div>
+                <div class="col-sm-4 Map">
+
+
+                </div>
+                <div class="col-sm-2 pie">
+                    <div class="piechart">
+
+                    </div>
+                    <div class="qrcode">
+                        <p>QR Code</p>
+                        <p>DATA</p>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-3 graph">
+                    <div class="qrcode2">
+                        <p>QR Code</p>
+                        <p>DATA</p>
+                    </div>
+                    <div class="bargraph">
+
+                        <figure class="highcharts-figure">
+                            <div id="container"></div>
+                          </figure>
+                    <!-- <div id="container" style="width: 100%; height: 100%"></div> -->
+                </div>
+                </div>
+                <div class="col-sm-2 card card3">
+
+                    <h6 class="card2-title ">Higher Performer</h6>
+                    <ul class="card2-list ">
+                        <li>Gold Coast Hospital</li>
+                        <li>Miraj Hotal</li>
+                        <li>Pin Pin Resort</li>
+                        <li>Alices Bar</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 card">
+                
+                        <h6 class="card-title">Total Booking</h6>
+                        <h4 class="current-data">1192</h4>
+                        <p class="previous-data">Last Week <span>64</span></p>
+                    
+                </div>
+                <div class="col-sm-2 card">
+
+                    <h6 class="card-title">Total Booking</h6>
+                    <h4 class="current-data">1192</h4>
+                    <p class="previous-data">Last Week <span>64</span></p>
+
+                </div>
+                <div class="col-sm-2 card">
+        
+                        <h6 class="card-title">Total Booking</h6>
+                        <h4 class="current-data">1192</h4>
+                        <p class="previous-data">Last Week <span>64</span></p>
+                    
+                </div> 
+                <div class="col-sm-2 card">
+        
+                    <h6 class="card-title">Total Booking</h6>
+                    <h4 class="current-data">1192</h4>
+                    <p class="previous-data">Last Week <span>64</span></p>
+                
+                </div> 
+                <div class="col-sm-2 card">
+        
+                    <h6 class="card-title">Total Booking</h6>
+                    <h4 class="current-data">1192</h4>
+                    <p class="previous-data">Last Week <span>64</span></p>
+                
+                </div>
+            </div>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+        
+    <script>
+        anychart.onDocumentReady(function() {
+   
+          // set the data
+          var data = {
+              header: ["Name", "Death toll"],
+              rows: [
+                ["1906", 8],
+                ["1908", 15],
+                ["1948", 17],
+                ["1960", 29],
+                ["1976", 10],
+                ["1988", 12],
+                ["1990", 11]
+                ["1990", 13]
+
+          ]};
+   
+          // create the chart
+          var chart = anychart.column();
+   
+          // add the data
+          chart.data(data);
+   
+          // set the chart title
+          chart.title("");
+   
+          // draw
+          chart.container("container");
+          chart.draw();
+        });
+      </script>
+</body>
+</html>

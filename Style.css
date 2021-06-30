@@ -1,0 +1,346 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 239, 237) !important;
+}
+.navbar-header{
+    margin-right: 90px !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .navbar-header{
+        margin-right: 0px !important;
+    }
+}
+.active a{
+    color: white !important;
+}
+.navbar a{
+    color: #000;
+}
+
+.active, .navbar a:hover{
+    background-color: black !important;
+    color:white !important;
+
+}
+.nav, .navbar-nav {
+    margin-top: 10px !important;
+    border: none !important;
+}
+.nav, .navbar-nav li{
+    border: 1px solid black;
+}
+/* .navbar-nav li a{
+        padding: 20px ;
+} */
+.navbar-nav>li>a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .navbar-nav>li>a {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    } 
+}
+.add{
+    margin-left: 20px !important;
+    margin-right: 120px !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .add{
+        margin-left: 20px !important;
+        margin-right: 0px !important;
+    }  
+}
+.add li{
+    margin-right: 5px;
+}
+
+#add-a {
+    padding: 5px 10px 5px 10px !important;
+}
+.input-group{
+    border: 1px solid black;
+    margin-right: 10px;
+}
+#today-booking{
+    font-size: 16px !important;
+}
+.booking-no{
+    color: cornflowerblue;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* //////left menu/////////// */
+.welcome-user{
+    padding: 5px 30px 20px 5px;
+    color: peru;
+    font-size: 20px;
+    text-align: center;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px 16px 16px 0px;
+    font-size: 16px;
+    text-decoration: none !important;
+  }
+   
+  .sidebar a.active {
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    /* background-color: #555; */
+    color: black;
+    font-weight: bolder;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .active-sidemenu{
+      background-color: none;
+      
+  }
+
+  .Logout{
+      margin-top: 70px !important;
+  }
+
+  /* //////Main Menu/////////// */
+  .Main-Menu{
+    margin-left: 160px !important ;
+}
+  .card{
+      border: 1px solid black;
+      background-color: white;
+      margin: 10px;
+      align-items: center;
+      text-align: center;
+      padding: 0px !important;
+      width: 18% !important;
+  }
+ 
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .card{
+        width: 16% !important;
+    }
+}
+ 
+  .card-title{
+      color: steelblue;
+      font-size: 16px;
+      margin: 0px;
+      background-color: #fff;
+      border-bottom: 1px solid rgb(158, 158, 158);
+  }
+  .current-data{
+      background-color: white;
+      font-size: 24px;
+      font-weight: bolder;
+      margin: 15px 0px;
+  }
+  .previous-data{
+      border-top: 1px solid  rgb(158, 158, 158);
+      background-color: white;
+      font-size: 14px;
+      margin: 0px;
+      font-weight: bold;
+  }
+
+  .card2-title{
+    color: steelblue;
+    font-size: 16px;
+    margin: 0px;
+    background-color:rgb(230, 207, 210);
+    padding: 2px 0px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+  }
+  .card2-list{
+      list-style: none;
+      text-align: left;
+      margin-bottom: 0px;
+  }
+
+  .card2-list li{
+      background-color: white;
+      font-size: 17px;
+      border-bottom: 1px solid  rgb(179, 175, 175);
+      padding: 2px 0px;
+  }
+
+  .Map{
+      border: 1px solid black;
+      height: 300px;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 350px !important;
+  }
+  .pie{
+    border: 1px solid black;
+    margin-top: 10px;
+      height: 300px;
+      width: 250px !important;
+  }
+  .graph{
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: 300px;
+  }
+
+  .card3{
+      margin-top: -140px !important;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    .sidebar {
+       
+        width: 140px;
+    
+      }
+    .card-title{  
+        font-size: 14px;      
+    }
+    .previous-data{
+ 
+        font-size: 12px;
+       
+    }
+    .Map{
+        width: 28% !important;
+    }
+    .pie{
+        width: 20% !important;
+    }
+
+  .card3 {
+    margin-top: -130px !important;
+}
+
+.card2-list li{
+    font-size: 14px;
+    padding: 2px 0px;
+}
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+#container svg{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.piechart{
+    height: 65%;
+}
+.qrcode, .qrcode2{
+    /* margin-top: 20px; */
+    height: 35%;
+    transform: rotate(-12deg);
+}
+
+.bargraph{
+    height: 65%;
+}
+
+.qrcode p{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px !important;
+    background-color: white;
+    width: 70% !important;
+    margin: 0 auto 5px auto;
+}
+
+.qrcode2 p{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px !important;
+    background-color: white;
+    width: 60% !important;
+    margin: 0 auto 5px auto;
+}
+
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 1em auto;
+  }
+  
+  #container {
+    height: 400px;
+  }
+  
+  .highcharts-data-table table {
+      font-family: Verdana, sans-serif;
+      border-collapse: collapse;
+      border: 1px solid #EBEBEB;
+      margin: 10px auto;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+  }
+  .highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  .highcharts-data-table th {
+      font-weight: 600;
+    padding: 0.5em;
+  }
+  .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+  }
+  .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+  .highcharts-data-table tr:hover {
+    background: #f1f7ff;
+  }
